@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms, Tables, Lists and Images </title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms, Tables, Lists and Images</h1>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ol>
+    
+    <!-- Pexels Image -->
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Sample Image from Pexels" width="500">
+    
+    <!-- Contacts Table -->
+    <h2>Contacts Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>256 Moi St</td>
+            <td>+254 734567890</td>
+            <td>john@plp.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>252 Pretoria St</td>
+            <td>+254 798654321</td>
+            <td>jane@plp.com</td>
+        </tr>
+        <tr>
+            <td>Emily Johnson</td>
+            <td>257 Kaka St</td>
+            <td>+254 110334455</td>
+            <td>emily@plp.com</td>
+        </tr>
+        <tr>
+            <td>Michael Brown</td>
+            <td>258 Uhuru St</td>
+            <td>+254 767889900</td>
+            <td>michael@plp.com</td>
+        </tr>
+        <tr>
+            <td>Sarah Lee</td>
+            <td>634 Mombasa St</td>
+            <td>+254 740332211</td>
+            <td>sarah@plp.com</td>
+        </tr>
+    </table>
+    
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required> <label for="female">Female</label><br><br>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="kenya">Kenya</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select><br><br>
+        
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports"> <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music"> <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interests" value="reading"> <label for="reading">Reading</label><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
